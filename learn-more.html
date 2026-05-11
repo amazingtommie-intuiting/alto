@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More | Discover Your Self | Wisdom Works</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #5a9a6e 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .main-content {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 50px;
+            margin: 20px 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #5a4fcf;
+            font-size: 1.8rem;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #ffd700;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.4rem;
+            margin: 30px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .approach-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .testimonials {
+            margin: 40px 0;
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            font-size: 4rem;
+            color: #ffd700;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            opacity: 0.5;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #ffd700;
+            text-align: right;
+        }
+
+        .pricing-section {
+            background: linear-gradient(135deg, #5a9a6e 0%, #4a8a5e 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .pricing-section h2 {
+            color: white;
+            border-bottom: 3px solid #ffd700;
+        }
+
+        .price-range {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffd700;
+            margin: 20px 0;
+        }
+
+        .pricing-note {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-top: 15px;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #764ba2 0%, #5a4fcf 100%);
+            border-radius: 15px;
+            margin-top: 40px;
+            color: white;
+        }
+
+        .cta-section h2 {
+            color: white;
+            border-bottom: none;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #333;
+            padding: 18px 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.6);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .main-content {
+                padding: 30px 20px;
+            }
+            .price-range {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Discover Your Authentic Self</h1>
+            <p class="subtitle">Your Journey to a More Aligned, Purposeful Life</p>
+        </header>
+
+        <div class="main-content">
+            <h2>My Approach</h2>
+            <div class="approach-section">
+                <p>I want to help you get acquainted with your inner Self — the real you. We start with pressing questions and take steps together to see what we feel, acknowledge that we were part of that event, and take steps toward self-forgiveness, fewer regrets, and a life that is more authentically yours.</p>
+                
+                <p>This work applies to your personal life <strong>and</strong> your business (if you have your own business). Every journey is tailored to you — I am your partner and guide.</p>
+                
+                <p><strong>I work with sincere, determined people who will do the work, knowing that it will be well worth their time.</strong></p>
+            </div>
+
+            <h2>What to Expect</h2>
+            <p>Through the Discover Your Self program, we'll explore the hidden assumptions and old programming that quietly influence your reactions, decisions, and life direction. Together, we'll uncover the deeper patterns and reconnect you with your authentic inner Self.</p>
+            
+            <p>Most programs include at least <strong>2 coaching sessions</strong>, with options for ongoing support based on your needs.</p>
+
+            <h2>Investment</h2>
+            <div class="pricing-section">
+                <h2>Programs & Pricing</h2>
+                <div class="price-range">$500 - $6,000</div>
+                <p>Programs vary based on depth, duration, and included bonuses</p>
+                <p class="pricing-note">Most programs include at least 2 coaching sessions<br>
+                <strong>Add 15% for payment plans</strong></p>
+            </div>
+
+            <h2>What Clients Say</h2>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">I enthusiastically endorse Tommie! She possesses a remarkable wealth of knowledge in both the realms of light work and business consulting. During our brief 30-minute session, she skillfully identified the root cause of a lung issue I was experiencing, leading a transformative healing session that left me feeling an instant positive shift in my body. It was an absolute joy to extend our session with Tommie for another 30 minutes as she guided me in shaping a clear and effective plan of action for my business.</p>
+                    <p class="testimonial-author">— Lauretta Stevens, Publishing Consultant, Calgary, Canada</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Tommie is a ray of sunshine. I have had the pleasure and honor of knowing Tommie for three years. Tommie's 'Love Touch' (as I call it) is truly special, as she infuses every healing session with love and compassion. Every session is nothing short of transformative. Tommie is very intuitive and her unique ability to meet my energetic needs makes each session a genuine blessing. I wholeheartedly recommend Tommie to anyone looking for understanding, love, and exceptional care. Your well-being is in expert loving hands with her.</p>
+                    <p class="testimonial-author">— Dr. Safiya, Award-Winning Author & Therapeutic Writing Coach, Philadelphia, PA</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Tommie's unique ability to connect with and channel healing energy is truly a gift. I left the session feeling rejuvenated, both physically and emotionally. In the days that followed, I noticed a significant improvement in my overall energy levels and a greater sense of clarity. If you're seeking positive transformation and balance in your life, I highly recommend reaching out to Tommie for an energy healing session. It's an experience that words can hardly capture, but one that can truly make a difference in your overall well-being.</p>
+                    <p class="testimonial-author">— Laura Muzal, Holistic Intuitive Animal Practitioner, Houston, TX</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Before working with Tommie, I knew I was stuck. I didn't know where the problem was or how to fix it. Tommie recognized what was challenging me immediately. After talking with Tommie, I was energized and ready to tackle the many things on my plate. The highest recommendation I can give is that I will definitely reach out to her again. Also, I really had been asking myself all day why my energy was so low. Also, Corey (my youngest) bopped off the bus and didn't immediately share his overloaded emotions through a temper tantrum.</p>
+                    <p class="testimonial-author">— Linnea Deeds, Legal Compliance Consultant, St Louis, MO</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text" style="text-align: center; font-size: 1.3rem; padding: 20px;">Everybody needs a Tommie.</p>
+                    <p class="testimonial-author">— Gerry Abhold 💜</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Ready to Begin Your Journey?</h2>
+                <p style="margin-bottom: 30px; font-size: 1.1rem;">Take the first step toward living a more authentic, aligned life.</p>
+                <a href="https://calendly.com/amazingtommie" class="cta-button">Book Your Free "Time for You" Session</a>
+                <a href="index.html" class="cta-button">Back to Home</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Wisdom Works Intuitive Services. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">thrivewithtommie.com | Discover Your Self Program</p>
+        </footer>
+    </div>
+</body>
+</html>
