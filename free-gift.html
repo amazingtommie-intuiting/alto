@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Your Free Gift | Wisdom Works</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #5a9a6e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .gift-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #5a4fcf;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .offer-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .offer-box h2 {
+            color: #764ba2;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .offer-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .offer-box li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .offer-box li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #5a9a6e;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #764ba2;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #333;
+            padding: 18px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.6);
+        }
+
+        .privacy-note {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Thank You Message (hidden by default) */
+        #thank-you {
+            display: none;
+        }
+
+        .thank-you-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        .calendly-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .calendly-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Form Section -->
+        <div id="form-section" class="card">
+            <div class="gift-icon">🎁</div>
+            <h1>Claim Your Free Gift</h1>
+            <p class="subtitle">Start your journey to your authentic Self</p>
+            
+            <div class="offer-box">
+                <h2>Your "Time for You" Package Includes:</h2>
+                <ul>
+                    <li><strong>Complimentary 30-minute session</strong> — A personalized conversation to explore where you are and where you want to be</li>
+                    <li><strong>Self-Care Practice Sheet</strong> — Practical suggestions to help you get more in tune with your inner Self</li>
+                    <li><strong>Personalized guidance</strong> — Tailored recommendations for your unique journey</li>
+                </ul>
+            </div>
+
+            <form id="lead-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+                
+                <!-- Hidden field to identify the source -->
+                <input type="hidden" name="source" value="Time for You Lead Capture">
+                
+                <button type="submit" class="submit-btn">Send Me My Free Gift!</button>
+            </form>
+
+            <p class="privacy-note">🔒 Your information is safe. I respect your privacy and will never share your email.</p>
+            
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+
+        <!-- Thank You Section (shown after form submission) -->
+        <div id="thank-you" class="card">
+            <div class="thank-you-icon">✨</div>
+            <h1>Thank You!</h1>
+            <p class="subtitle">Your free gift is on its way to your inbox!</p>
+            
+            <div class="offer-box">
+                <h2>What's Next?</h2>
+                <p style="margin-bottom: 15px;">Check your email in the next few minutes for:</p>
+                <ul>
+                    <li>Your Self-Care Practice Sheet</li>
+                    <li>A personal welcome message from me</li>
+                    <li>Instructions to book your complimentary session</li>
+                </ul>
+            </div>
+
+            <p style="margin: 20px 0;"><strong>Ready to schedule your session now?</strong></p>
+            
+            <a href="https://calendly.com/amazingtommie" class="calendly-btn">Book Your Session →</a>
+            
+            <br><br>
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        // Simple form handling
+        document.getElementById('lead-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // For now, just show the thank you message
+            // In the future, you can connect this to Formspree, Mailchimp, etc.
+            document.getElementById('form-section').style.display = 'none';
+            document.getElementById('thank-you').style.display = 'block';
+            
+            // Log the data (for testing - remove in production)
+            console.log('New lead:', { name, email, timestamp: new Date().toISOString() });
+            
+            // TODO: Connect to your email service here
+            // Options: Formspree (free), Mailchimp, ConvertKit, etc.
+        });
+    </script>
+</body>
+</html>
